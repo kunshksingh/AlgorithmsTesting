@@ -1,4 +1,4 @@
-# CS 4102 Exclusive Testing Repo
+# CS 4102 Testing Repo
 
 This repo contains scripts to test your code.
 
