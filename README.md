@@ -4,7 +4,7 @@ This repo contains scripts to test your code.
 
 ## Installing
 
-1. ```pip3 install git+https://github.com/greymatter-io/greymatter-config.git```
+1. ```pip3 install git+https://github.com/ActualTrash/AlgorithmsTesting```
 2. `algotester --help`
 
 ## Setting up dev environment (if you want to help develop)
