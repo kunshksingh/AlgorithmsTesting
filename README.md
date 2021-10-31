@@ -7,21 +7,6 @@ This repo contains scripts to test your code.
 1. ```pip3 install git+https://github.com/ActualTrash/AlgorithmsTesting```
 2. `algotester --help`
 
-## Setting up dev environment (if you want to help develop)
-```
-git clone https://github.com/ActualTrash/AlgorithmsTesting
-cd AlgorithmsTesting
-virtualenv venv
-
-# Pick one of the next three lines
-source venv/bin/activate # For bash/zsh
-source venv/bin/activate.fish # For fish
-venv/bin/activate.ps1 # For Windows
-
-# Install the package in editable mode
-pip install -e .
-```
-
 ## How to run the test suite
 
 Run tests in the `module-03` folder on your program
@@ -44,4 +29,21 @@ blah
 blah blah blah
 ----------
 output data goes here
-````
+```
+
+## Setting up dev environment (if you want to help develop)
+```
+git clone https://github.com/ActualTrash/AlgorithmsTesting
+cd AlgorithmsTesting
+virtualenv venv
+
+# Pick one of the next three lines
+source venv/bin/activate # For bash/zsh
+source venv/bin/activate.fish # For fish
+venv/bin/activate.ps1 # For Windows
+
+# Install the package in editable mode
+pip install -e .
+```
+
+
