@@ -1,0 +1,8 @@
+README.md
+setup.py
+algotester.egg-info/PKG-INFO
+algotester.egg-info/SOURCES.txt
+algotester.egg-info/dependency_links.txt
+algotester.egg-info/entry_points.txt
+algotester.egg-info/requires.txt
+algotester.egg-info/top_level.txt
