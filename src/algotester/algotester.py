@@ -53,18 +53,25 @@ def run_test(program, fname, verbose):
         res = subprocess.run(program, stderr=subprocess.PIPE, stdout=subprocess.PIPE, input=inp.encode())
         out = res.stdout.decode('utf-8')
         err = res.stderr.decode('utf-8')
+        sig = -res.returncode
     except PermissionError:
         error(f'Permission denied when trying to run program. Is it executable?')
         exit(2)
+    except FileNotFoundError:
+        error(f'Could not find {program}. Try ./{program} if your program is in the current directory')
+        exit(3)
+
+    # https://dsa.cs.tsinghua.edu.cn/oj/static/unix_signal.html
+    segfault = sig == 11 # 11 for SIGSEGV (segmentation fault)
 
     # Check output
-    if out.strip() == exp.strip():
+    if out.strip() == exp.strip() and not segfault:
         passed(fname)
     else:
         if verbose:
-            failed_verbose(fname, out, exp, err)
+            failed_verbose(fname, out, exp, err, segfault)
         else:
-            failed(fname)
+            failed(fname, segfault)
 
 
 n_passed = 0
@@ -76,14 +83,16 @@ def passed(fname):
     n_passed += 1
 
 
-def failed(fname):
+def failed(fname, segfault):
     global n_failed
     click.echo('[' + click.style('FAIL', bold=True, fg='red') + '] ' + fname)
+    if segfault:
+        raindows('🌈 Your program segfaulted :D 🦄🌈')
     n_failed += 1
 
 
-def failed_verbose(fname, out, exp, err):
-    failed(fname)
+def failed_verbose(fname, out, exp, err, segfault):
+    failed(fname, segfault)
     click.secho('--- Recieved ---', fg='red')
     click.echo(out)
     if err:
@@ -92,6 +101,9 @@ def failed_verbose(fname, out, exp, err):
     click.secho('--- Expected ---', fg='red')
     click.echo(exp)
     click.secho('----------------', fg='red')
+
+def raindows(msg):
+    click.echo('[' + click.style('YAY!', bold=True, fg='magenta') + '] ' + click.style(msg, fg='bright_magenta', bold=True, underline=True))
 
 
 def summary():
