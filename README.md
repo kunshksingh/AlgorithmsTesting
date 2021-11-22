@@ -53,7 +53,10 @@ source venv/bin/activate.fish # For fish
 venv/bin/activate.ps1 # For Windows
 
 # Install the package in editable mode
-pip install -e .
+pip3 install -e .
 ```
 
-
+## Uninstalling
+```
+pip3 uninstall algotester
+```
