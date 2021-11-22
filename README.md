@@ -1,6 +1,6 @@
 # CS 4102 Testing Repo
 
-This repo contains scripts to test your code. Feel free to submit a issue or pull request for any additional test cases, features, code cleanup or simply making the instructions more clear :) 
+This repo contains scripts to test your code. Feel free to submit a issue or pull request for any additional test cases, features, code cleanup, or simply making the instructions more clear :) 
 
 NOTE: I have only tested this in my environment. If you run into any problems, submit a Github issue in the issues tab above and/or DM me on discord and I can look into fixing it.
 
