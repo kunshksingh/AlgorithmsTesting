@@ -15,7 +15,7 @@ cd mod8
 ```
 3. **(This step is for macOS & Linux only! Windows coming soon!)** This next command creates a symbolic link (shortcut) from the testing repo to the place where the code is stored. This step is optional, but recommended. By doing it this way you can simply copy the Makefile from project to project.
 ```
-ln -snf /full/path/to/the/folder/that/you/used/in/part/one/AlgorithmsTesting/module-08 tests
+ln -s /full/path/to/the/folder/that/you/used/in/part/one/AlgorithmsTesting/module-08 tests
 ```
 4. Add this to your Makefile. You should replace ./a.out with whatever your program entry point is. If you didn't do step 3, you should also change `tests` to the test folder you want to use (ex. /something/something/AlgorithmsTesting/module-08).
 ```
