@@ -19,9 +19,7 @@ algotester ./a.out tests/module-03
 
 Note: This implies that you have a folder called module-03 in another folder called tests! Download the test cases from this repo and place them somewhere memorable.
 
-### How to hook this up to your Makefile to *c0d3 l1k3 4 pr0*
-
-Coming soon!
+[How to hook this up to your Makefile to c0d3 l1k3 4 pr0](https://github.com/ActualTrash/AlgorithmsTesting/blob/main/testing-pipeline.md)
 
 
 ## Adding test cases
