@@ -17,7 +17,7 @@ Run tests in the `module-03` folder on a program named `a.out`
 algotester ./a.out tests/module-03
 ```
 
-Note: This implies that you have a folder called module-03 in another folder called tests! Download the test cases from this repo and place them somewhere memorable.
+Note: This implies that you have a folder called module-03 in another folder called tests! Download the test cases from this repo and place them somewhere memorable or check out the writeup below on how to do this automatically.
 
 [How to hook this up to your Makefile to c0d3 l1k3 4 pr0](https://github.com/ActualTrash/AlgorithmsTesting/blob/main/testing-pipeline.md)
 
