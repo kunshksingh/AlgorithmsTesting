@@ -1,16 +1,28 @@
 # CS 4102 Testing Repo
 
-This repo contains scripts to test your code.
+This repo contains scripts to test your code. Feel free to submit a issue or pull request for any additional test cases, features, code cleanup or simply making the instructions more clear :) 
+
+NOTE: I have only tested this in my environment. If you run into any problems, submit a Github issue in the issues tab above and/or DM me on discord and I can look into fixing it.
 
 ## Installing
 
 1. ```pip3 install git+https://github.com/ActualTrash/AlgorithmsTesting```
-2. `algotester --help`
+2. `algotester --help` <-- If this doesn't work see the troubleshooting page (TODO)
 
 ## How to run the test suite
 
-Run tests in the `module-03` folder on your program
-```algotester ./a.out module-03```
+Run tests in the `module-03` folder on a program named `a.out`
+
+```
+algotester ./a.out tests/module-03
+```
+
+Note: This implies that you have a folder called module-03 in another folder called tests! Download the test cases from this repo and place them somewhere memorable.
+
+### How to hook this up to your Makefile to *c0d3 l1k3 4 pr0*
+
+Coming soon!
+
 
 ## Adding test cases
 
