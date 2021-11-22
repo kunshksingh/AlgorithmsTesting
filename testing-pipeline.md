@@ -13,7 +13,7 @@ git clone https://github.com/ActualTrash/AlgorithmsTesting
 ```
 cd mod8
 ```
-3. **(This step if for macOS & Linux only! Windows coming soon!)** This next command creates a symbolic link (shortcut) from the testing repo to the place where the code is stored. This step is optional, but recommended. By doing it this way you can simply copy the Makefile from project to project.
+3. **(This step is for macOS & Linux only! Windows coming soon!)** This next command creates a symbolic link (shortcut) from the testing repo to the place where the code is stored. This step is optional, but recommended. By doing it this way you can simply copy the Makefile from project to project.
 ```
 ln -snf /full/path/to/the/folder/that/you/used/in/part/one/AlgorithmsTesting/module-08 tests
 ```
