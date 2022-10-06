@@ -40,6 +40,15 @@ blah blah blah
 ----------
 output data goes here
 ```
+## Using Test Case Generators
+*Currently only for Module 5 at the moment, more to come*
+
+To use the test case generator, make sure to provide a valid input based on the problem. Send output of the testcase generator to a file for ease of use.
+Example:
+```
+python3 wiring.py > output.txt
+```
+The following output.txt will be populated with your testcase, which you can now test on your program!
 
 ## Setting up dev environment (if you want to help develop)
 ```
