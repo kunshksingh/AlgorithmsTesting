@@ -1,5 +1,16 @@
 import math
 import random as r
+#___________________________________________________________
+#|  Test Case Generator for Wiring Lab                     |
+#|                                                         |
+#|  Input: "Num_of_veticies Num_of_edges"                  |
+#|  Example Input: "4 5" or "25 31"                        |
+#|                                                         |
+#|  Output: A valid wiring testcase to try on your code    |
+#|                                                         |
+#|  Make sure you send output to a file when using         |
+#|  Example: "python3 wiring.py > output.txt"              |
+#l_________________________________________________________|
 
 testcase = input().split(' ')
 verticies = int(testcase[0])
